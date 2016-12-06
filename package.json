@@ -13,12 +13,23 @@
   "eslintConfig": {
     "extends": "airbnb",
     "rules": {
-      "space-before-function-paren": [2, "never"],
+      "space-before-function-paren": [
+        2,
+        "never"
+      ],
       "comma-dangle": 0,
-      "strict": [2, "global"],
+      "strict": [
+        2,
+        "global"
+      ],
       "eol-last": 0,
       "func-names": 0,
-      "no-underscore-dangle": [2, {"allowAfterThis": true}],
+      "no-underscore-dangle": [
+        2,
+        {
+          "allowAfterThis": true
+        }
+      ],
       "consistent-return": 0,
       "no-param-reassign": 0
     }
@@ -28,24 +39,27 @@
     "boilerplate"
   ],
   "dependencies": {
+    "babel-register": "^6.18.0",
     "eventemitter3": "^1.2.0",
-    "stats.js": "^0.16.0"
+    "html-webpack-plugin": "^2.24.1",
+    "stats.js": "^0.16.0",
+    "webpack-hot-middleware": "^2.13.2"
   },
   "author": "Aaron",
   "license": "MIT",
   "devDependencies": {
-    "file-loader": "latest",
-    "url-loader": "latest",
     "babel-core": "^6.7.7",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.6.0",
+    "copy-webpack-plugin": "latest",
     "eslint": "^2.12.0",
     "eslint-config-airbnb": "^8.0.0",
     "eslint-plugin-import": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^1.0.3",
     "eslint-plugin-react": "^5.0.1",
+    "file-loader": "latest",
+    "url-loader": "latest",
     "webpack": "latest",
-    "webpack-dev-server": "latest",
-    "copy-webpack-plugin": "latest"
+    "webpack-dev-server": "latest"
   }
 }

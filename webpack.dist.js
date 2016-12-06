@@ -9,7 +9,9 @@ const webpack = require('webpack');
 const config = require('./webpack.base');
 
 module.exports = {
-  entry: config.entry,
+  entry: [
+    path.join(__dirname, './src/main.js')
+  ],
   output: config.output,
 
   plugins: config.plugins.concat([
