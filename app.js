@@ -5,7 +5,6 @@ const config = require('./webpack.base');
 const path = require('path');
 const express = require('express');
 const app = express();
-const io = require('socket.io')(server);
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 9999 : process.env.PORT;
 const domain = '0.0.0.0';
@@ -17,6 +16,7 @@ export const server = app.listen(port, function onStart(err) {
   // console.info(server.address());
   console.info('==> 🌎 Listening on port %s. Open up http://0.0.0.0:%s/ in your browser.', port, port);
 });
+const io = require('socket.io')(server); // create socket.io server
 
 if (isDeveloping) {
   const compiler = webpack(config);
