@@ -1,6 +1,6 @@
 # Node.js Webpack boilerplate project
 
-This project is a boilerplate for webpack enabled Nodejs + socket.io projects.
+This project is a boilerplate for webpack enabled Nodejs projects. It is originally created to help with making HTML5 realtime game project.
 
 It uses [Yarn](https://github.com/yarnpkg/yarn/) instead of `npm` to  manage modules, simply because `Yarn` is faster.
 
